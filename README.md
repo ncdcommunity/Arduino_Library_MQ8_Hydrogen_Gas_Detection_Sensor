@@ -1,5 +1,5 @@
 
-![ADC121C_MQ8](ADC121C_I2CGAS_MQ8.png)](https://store.ncd.io/product/mq-8-hydrogen-gas-sensor-adc121c-12-bit-adc-i2c-mini-module/).
+![ADC121C_MQ8](ADC121C_I2CGAS_MQ8.png)](https://store.ncd.io/product/mq-8-hydrogen-gas-sensor-adc121c-12-bit-adc-i2c-mini-module/)
 
 # ADC121C_MQ8
 ADC121C_MQ8 is a hydrogen gas detection Sensor.
