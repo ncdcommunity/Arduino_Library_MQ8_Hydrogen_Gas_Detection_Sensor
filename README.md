@@ -37,7 +37,7 @@ The ADC121C_MQ8 has a number of settings, which can be configured based on user 
 
 1.Automatic Conversion mode: When these bits are set to zeros, the automatic conversion mode is disabled. This is the case at power-up.When these bits are set to a non-zero value, the ADC will begin operating in automatic conversion mode.
 
-    mq8.setCycleTime(CYCLE_TIME_32);              // Tconvert x 32, 27 ksps
+      mq8.setCycleTime(CYCLE_TIME_32);              // Tconvert x 32, 27 ksps
     
 2.Alert Hold:This bit tells the Alert will self clear or not.
 
@@ -45,7 +45,7 @@ The ADC121C_MQ8 has a number of settings, which can be configured based on user 
   
    1: Alerts will not self-clear and are only cleared when a one is written to the alert high flag or the alert low flag in the Alert Status register.
 
-    mq8.setAlertHold(ALERT_HOLD_CLEAR);         // Alerts will self-clear
+      mq8.setAlertHold(ALERT_HOLD_CLEAR);         // Alerts will self-clear
 
 3.Alert Flag Enable:This bit indicates when an alert condition has occurred. When the Alert Bit Enable is set in the Configuration Register, this bit will be high if either alert flag is set in the Alert Status Register.Otherwise, this bit is a zero.
 
@@ -53,7 +53,7 @@ The ADC121C_MQ8 has a number of settings, which can be configured based on user 
   
    1: Enables alert status bit [D15] in the Conversion Result register.
 
-       mq8.setAlertFlag(ALERT_FLAG_DISABLE);     // Disables alert status bit in the Conversion Result register
+         mq8.setAlertFlag(ALERT_FLAG_DISABLE);     // Disables alert status bit in the Conversion Result register
        
 4.Alert Pin Enable:.
 
@@ -61,7 +61,7 @@ The ADC121C_MQ8 has a number of settings, which can be configured based on user 
   
    1: Enables the ALERT output pin
   
-    mq8.setAlertPin(ALERT_PIN_DISABLE);       // Disables the ALERT output pin
+        mq8.setAlertPin(ALERT_PIN_DISABLE);       // Disables the ALERT output pin
 
 5.Polarity: This bit configures the active level polarity of the ALERT output pin.
 
@@ -69,8 +69,8 @@ The ADC121C_MQ8 has a number of settings, which can be configured based on user 
  
    1: Sets the ALERT pin to active high
  
-     mq8.setPolarity(POLARITY_LOW);        // Sets the ALERT pin to active low
+        mq8.setPolarity(POLARITY_LOW);        // Sets the ALERT pin to active low
     
 6.Hydrogen measurement:The following command is used to measure the Hydrogen value.
 
-     mq8.Measure_Hydrogen(-1.44, 2.3);      // read the Hydrogen value
+       mq8.Measure_Hydrogen(-1.44, 2.3);      // read the Hydrogen value
